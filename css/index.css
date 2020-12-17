@@ -1,0 +1,103 @@
+@font-face{
+    font-family: 'sfuisemi';
+  src: url(../font/SFUIDISPLAY-SEMIBOLD.woff) format('woff')
+}
+
+*{margin: 0; padding: 0;}
+body{font-family: 'sfuisemi'; color: #9B8C8C;}
+li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+.hide{display: none;}
+button{background-color: transparent; border: 0; cursor: pointer; color: inherit;}
+
+.more{background-color: #FFB5B5; border-radius: 27px; color: #fff; padding: 8px 22px;}
+#wrap{}
+header{background-image: url(../img/img%201.png); background-size: cover; background-position: center; height: 360px; color: #fff;}
+header h1{text-align: center; font-size: 20px; padding-top: 51px;}
+header .menu{position: absolute;top: 55px; left: 15px;}
+header .gnb{display: none;}
+header li{}
+header li a{}
+header .tit{padding-top: 119px; margin-left: 9.3%; font-size: 6.4vw;   /*vw : 뷰포트의 너비 기준으로 */}
+header .tit .t01{width: 116px;}
+header .tit .t02{display: none; width: 610px;}
+header .tit .more{display: none;}
+
+section h2{color: #9B8C8C; font-size: 18px; margin: 30px 4% 4% 4%;}
+.sect1{}
+.sect1 .imgbox{margin: 4%;}
+.sect1 .imgbox img{width: 100%;}
+.sect1 .txt{margin: 4%;}
+.sect1 .txt p{margin-bottom: 8px; font-size: 12px;}
+
+.sect2{background-image: url(../img/bg.svg); background-repeat: no-repeat; background-size: cover;}
+/*100%는 좌우만 같게 할때 사용, cover는 좌우,위아래 다 덮을때*/
+
+.sect2 h2{margin-top: 55px;}
+.sect2 ul{padding: 4%; margin-top: 89px; margin-bottom: 15px; display: flex; flex-wrap: wrap; justify-content: space-between;}
+.sect2 ul li{width: 48%; /*margin-right: 15px;*/ margin-bottom: 15px; text-align: center;}
+.sect2 ul li a{}
+.sect2 ul li a .iconbox{text-align: center;padding-top: 63px; padding-bottom: 63px; background-color: #fff; margin-bottom: 30px;height: 165px; box-sizing: border-box;}
+.sect2 ul li a .iconbox img{}
+.sect2 ul li a .iconbox span{display: block; padding-top: 15px;}
+.sect2 ul li a .txtbox{display: none;}
+
+
+footer{background-color: #B89A9A; color: #fff;padding: 4%; overflow: auto;}
+footer h3{font-size: 14px; float: left;}
+footer address{float: right; font-size: 10px;font-style: normal;}
+footer ul{clear: both; float: right;}
+footer ul li{float: left;margin-left: 10px;}
+footer ul li a{}
+
+
+@media all and (min-width:1024px){
+    header{height: 580px;}
+    header h1{font-size: 32px;}
+    header .tit{/*padding-left: 14.39%;*/ /*font-size: 60px;*/}    /*vw : 뷰포트의 너비 기준으로 */
+    section h2{font-size: 24px; margin-top: 80px;}
+    .sect1 {overflow: auto;}
+    .sect1 .imgbox{width: 54.31%; float: left;margin-top: 0;}
+    .sect1 .txtbox{
+        width: 32.19%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        font-size: 20px;
+        line-height: 30px;}
+    .sect1 .txt p{font-size: 20px; line-height: 30px; margin-top: 0; }
+    
+    .sect2{background-image: url(../img/bg2.svg);}
+    .sect2{clear: both;}
+    .sect2 ul{flex-wrap: nowrap; margin-bottom: 30px;}
+    .sect2 ul li{width: 23%;}
+    .sect2 ul li a .iconbox{
+        padding-bottom: 80px;
+        height: 226px;
+    }
+    
+    
+    footer h3{font-size: 24px;}
+    footer address{font-size: 20px;}
+}
+
+
+@media all and (min-width:1280px){
+    header h1{text-align: left; padding-left: 6.2%; float: left;}
+    header .menu{display: none;}
+    header .gnb{display: block; float: right; padding-top: 51px; padding-right: 6.2%;}
+    header .gnb li{float: left; padding-left: 95px; font-size: 20px;}
+    header .tit .t02{display: block; font-size: 1.5vw; width: 610px; line-height: 1.333  133%;}
+    header .tit .more{display: block; margin-top: 1em;}
+    .sect2 ul li a .txtbox{display: block;}
+    .sect2{background-image: url(../img/bg3.svg); text-align: left;}
+    .sect2 ul li a .iconbox{border: 1px solid #FFB5B5;}
+}
+
+@media all and (min-width:1800px){
+    header{height: 800px;}
+    .sect1 .txt{line-height: 40px; font-size: 30px;}
+}
+
+/*html, css 등의 내용이 바뀐 파일을 다시 업로드 했지만, 새로고침이 잘 안될때는 캐시 삭제하고 새로고침 => 단축기 ctrl + F5*/
